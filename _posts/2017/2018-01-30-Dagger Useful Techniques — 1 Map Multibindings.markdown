@@ -4,6 +4,7 @@ title:  "Dagger Useful Techniques — #1 Map Multibindings"
 date:   2018-01-30 23:38:00+0530
 categories: main
 tags: android
+comments: true
 ---
 
 Welcome to a series of Dagger Useful Techniques to make your dependency injection experience smoother. In this series, I would like to help the developers to make the most of Dagger who are using it for dependency injection. But before I start, there are something to clarify.
