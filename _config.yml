@@ -8,7 +8,7 @@ locale:       "en"
 # About/contact
 author:
   name:       Amit Kumar
-  url:        http://yourhomepage.com 
+  url:        https://amitkma.github.io 
 
 # Gems
 gems:
@@ -17,6 +17,14 @@ gems:
 
 #Others
 markdown: kramdown
+permalink: /:title/
 
 plugins:
   - jekyll-gist
+  
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      slug: null

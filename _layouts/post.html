@@ -1,7 +1,47 @@
 ---
 layout: default
 ---
+<div class="main-content">
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
-
+  <span>
+    [&nbsp;
+    {% for tag in page.tags %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a class="no-underline" href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>    
+    {% endfor %}
+    ]
+  </span>
+<div class="post">
 {{ content }}
+</div>
+<hr>
+<div>
+  {% if page.previous.url %}
+		<div><span class="boldtext">Previous post: </span><a href="{{ page.previous.url }}">{{page.previous.title}}</a></div>
+  {% endif %}
+  {% if page.next.url %}
+		<div><span class="boldtext">Next post: </span><a href="{{ page.next.url }}">{{page.next.title}}</a></div>
+  {% endif %}
+</div>
+<hr>
+<div id="disqus_thread"></div>
+<script>
+    
+  
+    var disqus_config = function () {
+        this.page.url = {{site.url}};  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = {{page.path}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'https://amitkma-github-io.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
