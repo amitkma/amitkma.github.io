@@ -7,32 +7,9 @@ title: {{ site.name }}
 
 <div id="home" class="main-content">
   <h1>Blog Posts</h1>
-  <ul>
+  <ul class="posts">
     {% for post in site.posts %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-  	{% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-  	{% capture prev_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-  	{% capture prev_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-
-  	{% if forloop.first %}
-    	<h4>{{ this_month }} {{ this_year }}</h4>
-    	<ul>
-  	{% endif %}
-  	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-
-  	{% unless forloop.last %}
-    	{% if this_year != prev_year %}
-      	</ul>
-      	<h4>{{ prev_month }} {{ prev_year }}</h4>
-      	<ul>
-    {% else %}
-      {% if this_month != prev_month %}
-        </ul>
-        <h4>{{ prev_month }} {{ prev_year }}</h4>
-        <ul>
-      {% endif %}
-    {% endif %}
-  {% endunless %}
+      <li><span><small><strong>{{ post.date | date:"%B %-d, %Y" }}</strong></small></span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
