@@ -1,0 +1,18 @@
+<div class="reading_list_partial">
+    <div>
+        <h1 class="home-heading">Reading List</h1>
+        <p>List of all the articles, blogs, and tweets that I read </p>
+
+    </div>
+    <ul class="reading_list_partial_sublist">
+        {{ range .readings | first 3 }}
+          <li><strong>{{.tag}}</strong> » <a href="{{ .link }}">{{.title}}</a></li>
+        {{ end }}
+    </ul>
+    <footer class="page-footer">
+        <nav class="pagination">
+          <a class="next" href="/readings">Browse all readings&nbsp;»
+          </a>
+        </nav>
+      </footer>
+</div>

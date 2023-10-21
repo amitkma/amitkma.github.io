@@ -1,0 +1,11 @@
+# Public directory
+public/
+
+# Node modules
+node_modules/
+
+# Hugo generated resources
+resources/
+
+# Lock files
+*.lock

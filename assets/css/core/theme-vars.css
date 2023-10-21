@@ -1,0 +1,54 @@
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: rgb(255, 255, 255);
+    --entry: rgb(255, 255, 255);
+    --primary: rgb(35, 28, 51);
+    --secondary: rgb(108, 108, 108);
+    --tertiary: rgb(214, 214, 214);
+    --content: rgb(31, 31, 31);
+    --hljs-bg: rgb(28, 29, 33);
+    --code-bg: rgb(255, 255, 255);
+    --border: rgb(238, 238, 238);
+    --color-action: rgb(0, 116, 228);
+    --shadow: rgba(226, 221, 215, 0.5);
+    --font-size-base: 11px;
+    --font-size-xx-small: 0.5rem;
+    --font-size-x-small: 0.85rem;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 1.5rem;
+    --font-size-x-large: 2rem;
+    --font-size-xx-large: 3.4rem;
+    --base-space: 1.25em;
+    --half-space: calc(var(--base-space) / 2);
+    --quarter-space: calc(var(--base-space) / 4);
+    --double-space: calc(var(--base-space) * 2);
+}
+
+.dark {
+    --theme: rgb(29, 30, 32);
+    --entry: rgb(46, 46, 51);
+    --primary: rgb(218, 218, 219);
+    --secondary: rgb(155, 156, 157);
+    --tertiary: rgb(65, 66, 68);
+    --content: rgb(236, 233, 230);
+    --hljs-bg: rgb(46, 46, 51);
+    --code-bg: rgb(55, 56, 62);
+    --border: rgb(51, 51, 51);
+    --color-action: rgb(80, 162, 255);
+    --shadow: rgba(10, 10, 10, 0.25);
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+.dark.list {
+    background: var(--theme);
+}

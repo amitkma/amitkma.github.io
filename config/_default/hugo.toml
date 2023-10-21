@@ -1,0 +1,116 @@
+baseURL = 'https://amitkma.github.io/'
+languageCode = 'en-in'
+title = "Amit's Blog"
+theme = 'PaperMod'
+copyright = "Copyright©2023"
+enableEmoji = true
+enableRobotsTXT = true
+timeZone = "Asia/Kolkata"
+disqusShortname = "amitkma"
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+paginate = 5
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  description = "Test description"
+  defaultTheme = "auto"
+  ShowReadingTime = false
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = true
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  rss = true
+  
+  # home-info mode
+  [params.homeInfoParams]
+    Title="AMIT KUMAR"
+    Content = "I am a Founder, Software Developer, Finance Enthusiast and responsible for just everything on this website. Here, you can find my views related to anything. All the content or view shared here are my own. Anyway, who cares what I write 😀."
+    Avatar = "images/author.jpeg"
+  
+  [[params.socialIcons]]
+    name="Twitter"
+    url = "https://twitter.com/iAmitkma"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/amitkma"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/amitkma"
+
+  [[params.socialIcons]]
+    name = "facebook"
+    url = "https://facebook.com/amitkma"
+
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/amitk_15"
+
+  [params.cover]
+    hidden = false # hide everywhere but not in structured data
+    hiddenInList = true # hide on list pages and home
+    linkFullImages = true
+
+  [params.editPost]
+    URL = "https://github.com/amitkma/amitkma.github.io/content"
+    Text = "Suggest Changes" # edit text
+    appendFilePath = true # to append file path to Edit link
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    weight = 1
+    pageRef = "/posts/"
+  [[menu.main]]
+    name = "Archive"
+    identifier = "archive"
+    weight = 2
+    pageRef = "archives"
+  [[menu.main]]
+    name = "Books"
+    identifier = "books"
+    weight = 3
+    pageRef = "/books"
+  [[menu.main]]
+    name = "Search"
+    identifier = "search"
+    weight = 4
+    pageRef = "search"
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 5
+    pageRef = "/about"
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

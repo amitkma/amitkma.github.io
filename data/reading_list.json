@@ -1,0 +1,29 @@
+{
+    "readings": [
+        {
+            "link": "https://googles.com",
+            "title": "Title 1",
+            "tag": "Lol"
+        },
+        {
+            "link": "https://twitter.com",
+            "title": "Title 2",
+            "tag": "Fun"
+        },
+        {
+            "link": "https://twitter.com",
+            "title": "Title 2",
+            "tag": "Meme"
+        },
+        {
+            "link": "https://twitter.com",
+            "title": "Title 2",
+            "tag": "Product Management"
+        },
+        {
+            "link": "https://twitter.com",
+            "title": "Title 2",
+            "tag": "AI/ML"
+        }
+    ]
+}
