@@ -16,6 +16,9 @@ paginate = 5
   disableXML = true
   minifyOutput = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   description = "Test description"
   defaultTheme = "auto"
@@ -34,9 +37,14 @@ paginate = 5
   hideSummary = false
   showtoc = false
   tocopen = false
-
   rss = true
   
+  [params.assets]
+    favicon = "/images/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+
   # home-info mode
   [params.homeInfoParams]
     Title="AMIT KUMAR"

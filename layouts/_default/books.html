@@ -23,10 +23,10 @@
     {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
     {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
 
-    <div class="container">
+    <div class="container mb-5">
         {{ range $.Site.Data.books }}
         <a href="{{ .link }}" target="_blank">
-            <div class="row card justify-content-center my-5">
+            <div class="row card justify-content-center my-3">
                 <div class="col-12 col-md-4 py-2 align-self-center">
                     <img src="{{.cover}}" class="img-thumbnail mx-auto" height="200px"/>
                 </div>

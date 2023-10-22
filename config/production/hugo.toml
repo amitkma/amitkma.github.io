@@ -1,1 +1,4 @@
 googleAnalytics = 'G-RFZ7CQ3LND'
+
+[params]
+  env = "production"

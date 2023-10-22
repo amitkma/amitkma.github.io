@@ -115,11 +115,6 @@ ul {
     font-weight: 500;
 }
 
-.entry-header {
-    font-size: var(--font-size-large);
-    line-height: 1.6;
-}
-
 .rounded-corner-button {
     color: var(--primary);
     padding: 0.5rem 0.8rem;
@@ -169,4 +164,8 @@ ul {
 
 .book-description {
     color: var(--secondary);
+}
+
+#searchResults {
+    padding-left: 0;
 }
