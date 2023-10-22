@@ -162,3 +162,11 @@ ul {
 .header ul {
     padding-left: 0;
 }
+
+.book-author {
+    color: var(--secondary);
+}
+
+.book-description {
+    color: var(--secondary);
+}

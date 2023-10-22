@@ -1,0 +1,49 @@
+{{- define "main" }}
+
+<article class="post-single">
+    <header class="post-header">
+      <h1 class="post-title">
+        {{ .Title }}
+        {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+      </h1>
+      {{- if .Description }}
+      <div class="post-description">
+        {{ .Description }}
+      </div>
+      {{- end }}
+      {{- if not (.Param "hideMeta") }}
+      <div class="post-meta">
+        {{- partial "post_meta.html" . -}}
+        {{- partial "translation_list.html" . -}}
+        {{- partial "edit_post.html" . -}}
+        {{- partial "post_canonical.html" . -}}
+      </div>
+      {{- end }}
+    </header>
+    {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
+    {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+
+    <div class="container">
+        {{ range $.Site.Data.books }}
+        <a href="{{ .link }}" target="_blank">
+            <div class="row card justify-content-center my-5">
+                <div class="col-12 col-md-4 py-2 align-self-center">
+                    <img src="{{.cover}}" class="img-thumbnail mx-auto" height="200px"/>
+                </div>
+                <div class="col-12 col-md-8 align-items-center py-2">
+                    <h3 class="text-center text-md-start">{{.title}}</h3>
+                    <p class="text-center text-md-start book-author"><em>Author: {{.author}}</em></p>
+                    <p class="text-center text-md-start mt-3 book-description">{{.description | markdownify}}</p>
+                </div>
+            </div>
+        </a>
+        <hr/>
+        {{ end }}
+    </div>
+  
+    {{- if (.Param "comments") }}
+  {{ template "_internal/disqus.html" . }}
+  {{- end }}
+  </article>
+
+{{- end }}{{/* end main */}}

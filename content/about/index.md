@@ -13,7 +13,7 @@ I also spent some time at [Stream](https://getstream.io/) and worked on the Chat
 Currently, I am the co-founder of [DotMyStyle](https://dotmystyle.com). DotMyStyle is on a mission to change the fashion retail landscape in India by building e-commerce 3.0.
 
 ## Education
-1. **Indian Institue of Technology**: B.Tech ECE (2014-2018)
+1. **Indian Institue of Technology, Roorkee**: B.Tech ECE (2014-2018)
 
 
 ## Programming languages and framework I know

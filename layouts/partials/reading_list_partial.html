@@ -6,7 +6,7 @@
     </div>
     <ul class="reading_list_partial_sublist">
         {{ range .readings | first 3 }}
-          <li><strong>{{.tag}}</strong> » <a href="{{ .link }}">{{.title}}</a></li>
+          <li><strong>{{.tag}}</strong> » <a href="{{ .link }}" target="_blank" rel="noopener noreferrer me">{{.title}}</a></li>
         {{ end }}
     </ul>
     <footer class="page-footer">

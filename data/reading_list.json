@@ -1,29 +1,24 @@
 {
     "readings": [
         {
-            "link": "https://googles.com",
-            "title": "Title 1",
-            "tag": "Lol"
+            "link": "https://www.joelonsoftware.com/",
+            "title": "Joel On Software",
+            "tag": "Software Dev"
         },
         {
-            "link": "https://twitter.com",
-            "title": "Title 2",
-            "tag": "Fun"
-        },
-        {
-            "link": "https://twitter.com",
-            "title": "Title 2",
-            "tag": "Meme"
-        },
-        {
-            "link": "https://twitter.com",
-            "title": "Title 2",
-            "tag": "Product Management"
-        },
-        {
-            "link": "https://twitter.com",
-            "title": "Title 2",
+            "link": "https://karpathy.github.io/",
+            "title": "Andrej Karpathy Blog",
             "tag": "AI/ML"
+        },
+        {
+            "link": "https://aswathdamodaran.blogspot.com/",
+            "title": "Musings on Markets",
+            "tag": "Finance"
+        }, 
+        {
+            "link": "https://basecamp.com/gettingreal",
+            "title": "Getting Real by Basecamp",
+            "tag": "Software Dev"
         }
     ]
 }
