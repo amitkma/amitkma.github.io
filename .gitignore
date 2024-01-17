@@ -9,3 +9,4 @@ resources/
 
 # Lock files
 *.lock
+.DS_Store
