@@ -133,6 +133,10 @@ ul {
     margin-bottom: 3rem;
 }
 
+.post-meta {
+    padding-top: 1rem;
+}
+
 .post-single .post-meta {
     margin-top: 1.5rem;
     font-weight: 500;
